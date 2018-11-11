@@ -1,0 +1,226 @@
+body{
+    background-color: #ebeaf1
+}
+header{
+    height: 100px;
+    background-color: white;
+    border-bottom: #dedede 1px solid
+}
+.nav_dashbord{
+    background-color: #2e293f;
+    padding: 0px;
+}
+.dashbord{
+    padding: 0px;
+    list-style: none
+}
+.dashbord_item{
+    text-align: center;
+    font-style: normal;
+    background-color: #322d41;
+    color: #7f7da1;
+    padding-top: 30px;
+    cursor: pointer
+}
+.dashbord_item > img{
+    width: 50px;
+    height: 50px;
+    float: bottom;
+    display: block;
+    margin: auto;
+}
+.dashbord_item:hover{
+    background-color: #2e293f
+}
+.header_nav_dashbord{
+    background-color: #2e293f;
+    padding: 0px
+}
+.header_nav_dashbord img{
+    width: 150px;
+    height: 80px;
+    display: block;
+    margin-top: 5px
+}
+.dashbord_item_sub_menu{
+    background-color: #2e293f;
+    border: #dedede 1px solid;
+    border-radius: 4px;
+    width: 300px;
+    display: none;
+    padding-bottom: 20px
+}
+.border_menu{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 98.9%;
+    bottom: 70%
+}
+.dashbord_item_sub_menu_item{
+    text-align: left;
+    list-style: circle;
+    margin-top: 20px
+}
+.dashbord_item_sub_menu_item:hover{
+    text-decoration: underline
+}
+.header_nav .nav{
+    padding: 0px;
+    list-style: none;
+    height: 100%;
+}
+.header_nav .nav .nav_item{
+    display: inline-block;
+    min-width: 150px;
+    text-align: center;
+    padding-top: 25px;
+    color: #7f7da1;
+    cursor: pointer
+}
+.header_nav .nav .nav_item > img{
+    width: 15px;
+    height: 15px
+}
+.sub_nav_menu{
+    background-color: white;
+    border: #c5c5c5 1px solid;
+    border-radius: 2px;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: none
+}
+.sub_nav_menu_item{
+    color: gray;
+    text-align: left;
+    margin-bottom: 15px;
+    height: 30px;
+}
+.sub_nav_menu_item:hover{
+    color: blue;
+}
+.sub_nav_menu_item > .sub_nav_menu{
+    position: relative;
+    top: 0;
+    left: 100%;
+    margin-bottom: 50px
+}
+.sub_nav_menu_item .fleche_nav_icon{
+    width: 15px;
+    height: 15px;
+    margin-left: 50px
+}
+.sub_nav_menu_item > img{
+    height: 20px;
+    width: 20px;
+}
+.mega_menu{
+    background-color: white;
+    border: #cbcbcb 1px solid;
+    border-radius: 5px;
+    text-align: left;
+    display: none;
+}
+.mega_menu > .mega_menu_item{
+    display: inline-block;
+    margin: 20px;
+    list-style: none;
+    width: 150px;
+    border-right: #cbcbcb 1px solid;
+    font-weight: bold;
+    font-size: 15px
+}
+.sub_mega_menu{
+    list-style: none;
+    padding: 5px;
+    font-weight: normal;
+}
+.sub_mega_menu .sub_mega_menu_item{
+    margin-top: 15px
+}
+.header_nav_dashbord > img{
+    cursor: pointer
+}
+.header_nav_mobile{
+    background-color: white;
+    border-bottom: #c5c5c5 1px solid;
+    display: none;
+    height: 100%
+}
+.header_nav_mobile .menu_icon{
+    width: 50px;
+    height: 50px;
+}
+.header_nav_mobile .sigle_img{
+    height: 50px;   
+    width: 200px
+}
+@media(min-width: 500px){
+    .dashbord_item_sub_menu{
+        position: relative;
+        left: 112%;
+        bottom: 50%;
+    }
+    .dashbord_item{
+        height: 150px
+    }
+    .sub_nav_menu{
+        position: absolute;
+        min-width: 300px;
+        top: 100%;
+    }
+    .mega_menu{
+        position: absolute;
+        left: 100px;
+        right: 0;
+        top: 100%;
+        width: 80%;
+    }
+}
+@media(max-width: 500px){
+    .nav_dashbord{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        height: 100%;
+        overflow-y: scroll;
+        width: 95%;
+        top: 100px;
+        text-align: left;
+        padding-bottom: 100px;
+        display: none;
+        z-index: 5000
+    }
+    .dashbord_item_sub_menu{
+        background-color: #2e293f;
+        border: none;
+        border-left: green 2px solid;
+        border-radius: 0px;
+        width: 100%;
+        padding-bottom: 20px;
+        margin-left: 10px
+    }
+    .dashbord{
+        text-align: left
+    }
+    .header_nav_mobile{
+        display: block
+    }
+    .header_nav_dashbord{
+        display: none
+    }
+    .header_nav{
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        top: 100px;
+        right: 0;
+        left: 0;
+        overflow-y: scroll;
+        display: none
+    }
+    .header_nav .nav .nav_item{
+        width: 100%;
+    }
+}
